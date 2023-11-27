@@ -50,7 +50,7 @@
                     const data = await response.json();
 
                     // Process the data to fit into the chart.
-                    const labels = data.map(item => item.countyname); // Assuming 'countyname' is a field in your data
+                    const labels = data.map(item => item.countyname); // Assuming 'countyname' is field in your data
                     const chartData = data.map(item => item.value); // Assuming 'value' is the field you want to chart
 
                     // To Create the chart
