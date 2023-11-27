@@ -33,6 +33,7 @@
                 </div>
             </div>
         </nav>
+
         <!-- Masthead-->
         <header class="masthead">
                 <div class="masthead-heading text-uppercase" style="color: white; -webkit-text-stroke: 2px black;">Air Quality Measures!</div>
@@ -77,9 +78,11 @@
                     const data = await response.json();
 
                     // Get the table body element
+                    
                     const tableBody = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
 
                     // Populate the table with data
+
                     data.forEach(item => {
                         let row = tableBody.insertRow();
 
